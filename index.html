@@ -5,7 +5,7 @@
         <title>Images in HTML</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- TO DO: Add your name to the meta author tag -->
-        <meta name="author" content="">
+        <meta name="author" content="Cassi Patterson">
         <meta name="description" content="Practice with images, video, svgs, and iframes for G.I.T. 598">
 
         <!-- GOOGLE FONTS LINKS -->
@@ -47,7 +47,7 @@
 
                 <pre>
                     <code>
-<!--                 -->    &lt;!-- Basic Image Tag Syntax --&gt;       
+<!--                 -->    &lt;!-- Basic Image Tag Syntax --&gt;
 
 <!--                 -->    &lt;img src="images/image-name.png" alt="image description" width="100" height="100"&gt;
                     </code>
@@ -74,13 +74,14 @@
 
                     <pre>
                         <code>
-<!--                 -->    &lt;!-- For Decorative Images, Leave alt Blank (or use CSS) --&gt;       
+<!--                 -->    &lt;!-- For Decorative Images, Leave alt Blank (or use CSS) --&gt;
 
 <!--                 -->    &lt;img src="images/image-name.png" alt="" width="100" height="100"&gt;
                         </code>
                     </pre>
 
                     <!-- TO DO: Add the decorative square-red-blue image below. Be sure to include the height and width -->
+                    <img src="images/square-red-blue.jpg" alt="" width="400" height="400">
 
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
@@ -90,13 +91,14 @@
                     <p>For images that are content, and necessary for understanding the page (think products, maps, etc.) you cannot leave the alt text blank, and should use it to describe the image to the best of your ability. These should also use width and height attributes that come from the edited image itself.</p>
                     <pre>
                         <code>
-<!--                 -->    &lt;!-- For Informative Images, Describe the Image with alt Text --&gt;       
-    
+<!--                 -->    &lt;!-- For Informative Images, Describe the Image with alt Text --&gt;
+
 <!--                 -->    &lt;img src="images/image-name.png" alt="useful image description" width="100" height="100"&gt;
                         </code>
                     </pre>
 
                     <!-- TO DO: Add the Memphis Recording Service Image Here. Be sure to include the height and width, and some alt text. I used "neon sign in white and red that says Memphis recording service" -->
+                    <img src="images/memphis-recording-service.jpg" alt="neon sign in white and red that says Memphis recording service" width="400" height="400">
 
                     <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
@@ -107,9 +109,9 @@
 
                     <pre>
                         <code>
-<!--                 -->    &lt;!-- For Functional Images, Leave the alt Text Blank, But Include an aria-label --&gt;       
+<!--                 -->    &lt;!-- For Functional Images, Leave the alt Text Blank, But Include an aria-label --&gt;
 
-<!--                 -->    &lt;a href="index.html" aria-label="Go to the home page">
+<!--                 -->    &lt;a href="index.html" aria-label="Go to the home page"&gt;
 <!--                 -->        &lt;img src="images/image-name.png" alt="image description" width="100" height="100"&gt;
 <!--                 -->    &lt;/a&gt;
                         </code>
@@ -124,29 +126,46 @@
 
                 <!-- TO DO: Add the home SVG from the Tabler Icons website inside of this link -->
                 <a href="#" aria-label="Go to the home page">
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg>
                 </a>
             </section>
 
         </main>
         <footer>
-            <p>For the icons below, we're using svg files. Find the Facebook, Instagram, & YouTube icons on the <a href="https://tablericons.com/" target="_blank">Tabler Icons</a> website.</p>
+            <p>For the icons below, we're using svg files. Find the Facebook, Instagram, &amp; YouTube icons on the <a href="https://tablericons.com/" target="_blank">Tabler Icons</a> website.</p>
             <section>
                 <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
 
                 <!-- TO DO: Add the Facebook icon from the tabler icons website inside of this link -->
                 <a href="#" aria-label="find us on Facebook">
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
                 </a>
-                
+
                 <!-- TO DO: Add the Instagram icon from the tabler icons website inside of this link -->
                 <a href="#" aria-label="find us on Instagram">
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
                 </a>
 
                 <!-- TO DO: Add the YouTube icon from the tabler icons website inside of this link -->
                 <a href="#" aria-label="find us on YouTube">
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                        <path d="M10 9l5 3l-5 3z" />
+                    </svg>
                 </a>
             </section>
         </footer>
